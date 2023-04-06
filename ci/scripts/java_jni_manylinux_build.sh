@@ -29,9 +29,8 @@ echo "=== Clear output directories and leftovers ==="
 rm -rf ${build_dir}
 
 echo "=== Building Arrow C++ libraries ==="
-devtoolset_version=$(rpm -qa "devtoolset-*-gcc" --queryformat %{VERSION} | \
-                       grep -o "^[0-9]*")
-devtoolset_include_cpp="/opt/rh/devtoolset-${devtoolset_version}/root/usr/include/c++/${devtoolset_version}"
+devtoolset_version=11
+devtoolset_include_cpp="/usr/include/c++/${devtoolset_version}"
 : ${ARROW_DATASET:=ON}
 : ${ARROW_GANDIVA:=ON}
 : ${ARROW_GANDIVA_JAVA:=ON}

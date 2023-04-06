@@ -26,6 +26,11 @@
 
 # include explicitly
 !ci/**
+!cpp/**
+!java/**
+!LICENSE.txt
+!NOTICE.txt
+!dev/**
 !c_glib/Gemfile
 !dev/archery/setup.py
 !dev/release/setup-*.sh
@@ -62,3 +67,4 @@
 !rust/datafusion/Cargo.toml
 !rust/datafusion/benches
 !rust/integration-testing/Cargo.toml
+!.env

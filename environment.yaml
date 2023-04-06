@@ -1,0 +1,7 @@
+name: arrow
+channels:
+  - defaults
+dependencies:
+  - pip
+  - pip: 
+    - dev/archery[all]
